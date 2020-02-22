@@ -1,5 +1,8 @@
 # UI5 Local Runner
 
+### With UI5 Local Runner you can install and run your UI5 apps on your PC , you can also configure the destinations and services locally . It is particularly useful if you want to 
+### develop front end and backend simultaneously on your PC thus significatly reducing the development time by ommiting deployment .
+
 Make sure to use src="https://sapui5.hana.ondemand.com/1.69.0/resources/sap-ui-core.js" in your index.html or install the UI5 SDK in /resoruces
 
 ## Install & Run :
