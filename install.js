@@ -92,7 +92,11 @@ var commands = [
         var fs = require("fs")
         if (fs.existsSync('ui5.yaml')) {
 
-            fs.copyFileSync("ui5.yaml","ui5.yaml.bak")
+		if (!fs.existsSync('ui5.yaml.bak')) {
+			 fs.copyFileSync("ui5.yaml","ui5.yaml.bak")
+		}
+       
+           
             var conf=fs.readFileSync('ui5.yaml')
             console.log("\x1b[31m",`ALERT !! Looks like you have ui5.yaml present . We will try to add dependency at the end of file .
              If error occurs please remove ui5.yaml and replace it with the backup file ui5.yaml.bak by renaming`)
@@ -188,7 +192,10 @@ server:
 }, {
     msg: ">> Configuring Destination Server", cmd: function () {
         var fs = require("fs")
-        fs.copyFileSync("package.json","package.json.bak")
+		if (!fs.existsSync('package.json.bak')) {
+			 fs.copyFileSync("package.json","package.json.bak")
+		}
+       
         var package=fs.readFileSync("package.json")
         var pkg=JSON.parse(package)
         pkg.ui5 = {dependencies:["ui5-middleware-cfdestination"]}
