@@ -1,0 +1,45 @@
+# OS
+**/.DS_Store
+**/.bash_history
+
+# IDE
+.idea/
+.settings/
+.project
+.che
+
+# Maven
+**/target/
+**/src/gen/
+
+# NPM
+**/.npm
+**/package-lock.json
+**/npm-debug.log
+**/node/
+**/node_modules/
+
+# MTA
+.mta/
+*.mtar
+
+# UI5
+dist/
+
+fioriHtmlRunner.html
+.*/fioriHtmlRunner.html
+visual_ext_index.html
+/webapp/visual_ext_index.html
+extended_runnable_file.html
+.*/extended_runnable_file.html
+sap-ui-cachebuster-info.json
+mock_preview_sapui5.html
+.*/mock_preview_sapui5.html
+UIAdaptation_index.html
+changes_preview.js
+AppVariant_index.html
+AppVariantPreviewPayload.zip
+mergedManifestDescriptor.json
+APIExternalProducer.js
+.*/APIExternalProducer.js
+/mta_archives/
