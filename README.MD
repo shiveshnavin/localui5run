@@ -36,7 +36,8 @@ server:
             - name: "api"
               url: "http://services.odata.org"
 
-Else Create ui5.yaml
+Else Create ui5.yaml --
+
 metadata:
  name: ui
 type: application
@@ -61,7 +62,7 @@ npm install --save-dev ui5-middleware-cfdestination  --cache-min 999999999
 
 If this step fails. Download and extract https://github.com/petermuessig/ui5-ecosystem-showcase/archive/master.zip and run the below command in current directory.
 
-npm install --save <path to extracted folder>\\ui5-ecosystem-showcase-master\\packages\\ui5-middleware-cfdestination
+npm install --save <path to extracted folder>\ui5-ecosystem-showcase-master\packages\ui5-middleware-cfdestination
                
 ```
 
