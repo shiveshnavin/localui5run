@@ -33,7 +33,7 @@ var commands = [
     msg: ">> Check Install", cmd: function (stepp) {
         var fs = require("fs")
         if (fs.existsSync('.localui5')) {
-            console.log("LocalUI5 Already Installed : Delete .localui5 and rerun index.js to ReInstall")
+            console.log("\x1b[32m","LocalUI5 Already Installed : Delete .localui5 and rerun index.js to ReInstall")
             step=commands.length - 1
             doit(step)
             
@@ -235,7 +235,7 @@ server:
     }
 }, {
     msg: ">> Running Locally... goto http://127.0.0.1:8080/index.html or your configured URL and make sure to add destination in ui5.yaml ", cmd: function () {
-        console.log("\x1b[32m","Preparing...")
+       
 		exec("ui5 serve", op);
     }
 }]
