@@ -21,7 +21,13 @@ var commands = [
 {
     msg: ">> Installing Setup Dependencies...This may take a while", cmd: function () {
         console.log("\x1b[0m","Starting...")
-        exec("npm install --save-dev fs --cache-min 999999999", op);
+        try{
+            var fs=require.resolve("fs")
+            exec("echo Dependencies Installed", op);
+        }catch(e)
+        {
+            exec("npm install --save-dev fs --cache-min 999999999", op);
+        }
     }
 },{
     msg: ">> Check Install", cmd: function (stepp) {
@@ -30,7 +36,6 @@ var commands = [
             console.log("LocalUI5 Already Installed : Delete .localui5 and rerun index.js to ReInstall")
             step=commands.length - 1
             doit(step)
-            console.log(step)
             
         }
         else{
