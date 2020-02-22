@@ -234,8 +234,8 @@ server:
         exec("echo 'done' >> .localui5", op);
     }
 }, {
-    msg: ">> Running Locally... goto http://127.0.0.1:8080/index.html or your configured URL and make sure to add destination in ui5.yaml ", cmd: function () {
-       
+    msg: ">> Running Locally... goto http://127.0.0.1:8080/index.html or your configured URL", cmd: function () {
+       console.log("Make sure to add destination in ui5.yaml (restart required)")
 		exec("ui5 serve", op);
     }
 }]
