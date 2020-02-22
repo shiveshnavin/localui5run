@@ -2,13 +2,13 @@
 
 Make sure to use src="https://sapui5.hana.ondemand.com/1.69.0/resources/sap-ui-core.js" in your index.html or install the UI5 SDK in /resoruces
 
-Install & Run :
+## Install & Run :
 ```
 copy install.js to folder in which package.json is located
 run : node install.js
 ```
 
-Manual Steps :
+## Manual Steps :
 
 ### Add @sap to npm registry
 ```
