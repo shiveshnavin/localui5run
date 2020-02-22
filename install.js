@@ -43,7 +43,8 @@ var commands = [
     msg: ">> Adding @sap to NPM registry", cmd: function () {
 
         console.log("\x1b[42m",`This will modify/create package.json and ui5.yaml (Will create backups first) . 
-        It is advised to add these files to GITIGNORE in case you wish to deploy the app on Cloud . For more info contact @shiveshnavin . PRESS ANY KEY TO CONTINUE...`);
+        It is advised to add these files to GITIGNORE in case you wish to deploy the app on Cloud . For more info contact @shiveshnavin .
+        Make sure to use src="https://sapui5.hana.ondemand.com/1.69.0/resources/sap-ui-core.js" in your index.html or install the UI5 SDK in /resoruces . PRESS ANY KEY TO CONTINUE...`);
        
         console.log('Press any key to continue or CTRL+C to cancel.');
         process.stdin.once('data', function () {
@@ -228,7 +229,7 @@ server:
         exec("echo 'done' >> .localui5", op);
     }
 }, {
-    msg: ">> Running Locally... goto http://127.0.0.1:8080/index.html or your configured URL", cmd: function () {
+    msg: ">> Running Locally... goto http://127.0.0.1:8080/index.html or your configured URL and make sure to use ", cmd: function () {
         exec("ui5 serve", op);
     }
 }]
