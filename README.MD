@@ -2,6 +2,8 @@
 
 #### With UI5 Local Runner you can install and run your UI5 apps on your PC , you can also configure the destinations and services locally . It is particularly useful if you want to  develop front end and backend simultaneously on your PC thus significatly reducing the development time by ommiting deployment .
 
+#### If you use VSCode , You can install SAPUI5 Extension (iljapostnovs.ui5plugin) to use code completion and other features of UI5 in IDE
+
 Note : You might want to add these files to .gitignore as these files are modified for running locally : 
 ```
 ui5.yaml , package.json , install.json , .localui5 , ui5.yaml.bak , package.json.bak , run.bat , run.sh
