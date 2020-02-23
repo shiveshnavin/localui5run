@@ -131,7 +131,7 @@ metadata:
  name: ui
 type: application
 server:
- customMiddleware:
+  customMiddleware:
     - name: ui5-middleware-cfdestination
       afterMiddleware: compression
       configuration:
@@ -174,7 +174,7 @@ server:
                 }
                 else {
                     console.log("\x1b[33m","If this step fails. Download and extract https://github.com/petermuessig/ui5-ecosystem-showcase/archive/master.zip and run the below command in current directory.")
-                    console.log("\x1b[33m",`npm install --save <path to extracted folder>\\ui5-ecosystem-showcase-master\\packages\\ui5-middleware-cfdestination`)
+                    console.log("\x1b[33m",`npm install --save-dev <path to extracted folder>\\ui5-ecosystem-showcase-master\\packages\\ui5-middleware-cfdestination`)
                     console.log( "\x1b[0m","Trying to install destination middleware...")
                     exec("npm install --save-dev ui5-middleware-cfdestination  --cache-min 999999999", op);
                 }
