@@ -37,7 +37,7 @@ server:
          port: 9087
          xsappJson: "xs-app.json"
          destinations:
-            # check that the destination name (here: "backend") matches your router in xssppJson 
+            # check that the destination name (here: "api") matches your router in xssppJson 
             - name: "api"
               url: "http://services.odata.org"
 
@@ -55,7 +55,7 @@ server:
          port: 9087
          xsappJson: "xs-app.json"
          destinations:
-            # check that the destination name (here: "backend") matches your router in xssppJson 
+            # check that the destination name (here: "api") matches your router in xssppJson 
             - name: "api"
               url: "http://services.odata.org"
 
