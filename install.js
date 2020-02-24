@@ -247,9 +247,11 @@ server:
        console.log("\x1b[0m","You can close this window now .")
        var text ;
        var file;
-       text = `ui5 build
-       ui5 serve
-       echo Exiting...`
+       text = 
+`ui5 build
+ui5 serve
+echo Exiting...
+pause`
 
         if(process.platform === 'win32')
         {
