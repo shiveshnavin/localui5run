@@ -263,7 +263,7 @@ pause
         {
             file = "run.sh"
             text = `ui5 build 
-            ui5 serve`
+ui5 serve`
         }
 
         var fs = require("fs") 
