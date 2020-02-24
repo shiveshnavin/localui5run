@@ -248,10 +248,12 @@ server:
        var text ;
        var file;
        text = 
-`ui5 build
-ui5 serve
+`@echo off
+cmd /c ui5 build
+cmd /c ui5 serve
 echo Exiting...
-pause`
+pause
+`
 
         if(process.platform === 'win32')
         {
