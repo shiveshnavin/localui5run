@@ -245,16 +245,23 @@ server:
        console.log("Make sure to add destination in ui5.yaml (restart required)")
        console.log("\x1b[33m","To start execute "+(process.platform=='win32'?'run.bat':'run.sh'))
        console.log("\x1b[0m","You can close this window now .")
+       var text ;
+       var file;
+       text = `ui5 build
+       ui5 serve
+       echo Exiting...`
+
         if(process.platform === 'win32')
         {
-            exec(`echo ui5 serve > run.bat
-            echo Exiting... >> run.sh`)
+           file = "run.bat"
         }
         else
         {
-            exec(`echo ui5 serve > run.sh
-            echo Exiting... >> run.sh`)
+            file = "run.sh"
         }
+
+        var fs = require("fs") 
+        fs.writeFileSync(file,text)
     }
 }]
 function doit(step) {
