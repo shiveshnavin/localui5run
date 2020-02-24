@@ -247,11 +247,11 @@ server:
        console.log("\x1b[0m"," ")
         if(process.platform === 'win32')
         {
-            exec('echo start cmd.exe /c ui5 serve > run.bat')
+            exec('echo ui5 serve > run.bat')
         }
         else
         {
-            exec('echo bash -c "ui5 serve" > run.sh')
+            exec('echo ui5 serve > run.sh')
         }
     }
 }]
