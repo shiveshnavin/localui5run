@@ -247,11 +247,13 @@ server:
        console.log("\x1b[0m","You can close this window now .")
         if(process.platform === 'win32')
         {
-            exec('echo ui5 serve > run.bat')
+            exec(`echo ui5 serve > run.bat
+            echo Exiting... >> run.sh`)
         }
         else
         {
-            exec('echo ui5 serve > run.sh')
+            exec(`echo ui5 serve > run.sh
+            echo Exiting... >> run.sh`)
         }
     }
 }]
