@@ -6,7 +6,7 @@
 
 Note : You might want to add these files to .gitignore as these files are modified for running locally : 
 ```
-ui5.yaml , package.json , install.json , .localui5 , ui5.yaml.bak , package.json.bak , run.bat , run.sh
+ui5.yaml , package.json , install.js , .localui5 , ui5.yaml.bak , package.json.bak , run.bat , run.sh
 ```
 
 Make sure to use src="https://sapui5.hana.ondemand.com/1.69.0/resources/sap-ui-core.js" in your index.html or install the UI5 SDK in /resoruces
