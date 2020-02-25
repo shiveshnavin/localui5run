@@ -241,7 +241,7 @@ server:
         exec("echo 'done' >> .localui5", op);
     }
 }, {
-    msg: ">> Installed.. Run and goto http://127.0.0.1:8080/index.html or your configured URL", cmd: function () {
+    msg: ">> Installed.. Run and goto http://127.0.0.1:<PORT>/index.html or your configured URL", cmd: function () {
        console.log("Make sure to add destination in ui5.yaml (restart required)")
        console.log("\x1b[33m","To start execute "+(process.platform=='win32'?'run.bat':'run.sh'))
        console.log("\x1b[0m","You can close this window now .")
