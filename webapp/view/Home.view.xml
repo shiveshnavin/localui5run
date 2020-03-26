@@ -1,11 +1,40 @@
-<mvc:View controllerName="localui5run.localui5run.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+<mvc:View controllerName="sn.covid19fnt.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App>
+		<Page id="page" title="{i18n>title}">
+			<headerContent>
+				<Button icon="sap-icon://compare-2" iconFirst="true" text="Analyze"></Button>
+			</headerContent>
+
+
+			<content>
+				<VBox backgroundDesign="Solid" width="100%" alignContent="Center">
+					<items>
+						<VBox class="sapUiContentPadding sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer">
+							<Button icon="sap-icon://compare-2" text="Analyze News" width="100%" />
+							<Button icon="sap-icon://feed" text="Post Feed" width="100%" />
+						</VBox>
+
+					</items>
+
+				</VBox>
+				<IconTabBar expanded="{device>/isNoPhone}" class="sapUiSmallMarginBottom sapUiResponsiveContentPadding">
+					<items>
+						<IconTabFilter text="Feeds">
+							<List showSeparators="Inner"></List>
+						</IconTabFilter>
+						<IconTabFilter text="India">
+
+							<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
+
+						</IconTabFilter>
+						<IconTabFilter text="World">
+
+							<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
+
+						</IconTabFilter>
+					</items>
+				</IconTabBar>
+			</content>
+		</Page>
+	</App>
 </mvc:View>

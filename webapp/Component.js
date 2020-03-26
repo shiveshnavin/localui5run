@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"localui5run/localui5run/model/models"
+	"sn/covid19fnt/model/models"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("localui5run.localui5run.Component", {
+	return UIComponent.extend("sn.covid19fnt.Component", {
 
 		metadata: {
 			manifest: "json"

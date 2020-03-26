@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "localui5run.localui5run.view.",
+		viewNamespace: "sn.covid19fnt.view.",
 		autoWait: true
 	});
 });

@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "localui5run.localui5run",
+		"id": "sn.covid19fnt",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -35,7 +35,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "localui5run.localui5run.view.Home",
+			"viewName": "sn.covid19fnt.view.Home",
 			"type": "XML",
 			"async": true,
 			"id": "Home"
@@ -56,7 +56,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "localui5run.localui5run.i18n.i18n"
+					"bundleName": "sn.covid19fnt.i18n.i18n"
 				}
 			}
 		},
@@ -70,7 +70,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "localui5run.localui5run.view",
+				"viewPath": "sn.covid19fnt.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false

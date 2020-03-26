@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Opa5) {
 	"use strict";
 
-	return Opa5.extend("localui5run.localui5run.test.integration.arrangements.Startup", {
+	return Opa5.extend("sn.covid19fnt.test.integration.arrangements.Startup", {
 
 		iStartMyApp: function (oOptionsParameter) {
 			var oOptions = oOptionsParameter || {};
@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "localui5run.localui5run",
+					name: "sn.covid19fnt",
 					async: true
 				},
 				hash: oOptions.hash,

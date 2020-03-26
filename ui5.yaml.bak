@@ -1,0 +1,7 @@
+specVersion: '1.0'
+metadata:
+  name: covid19fnt
+type: application
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8

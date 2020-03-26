@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"localui5run/localui5run/controller/Home.controller"
+	"sn/covid19fnt/controller/Home.controller"
 ], function (Controller) {
 	"use strict";
 

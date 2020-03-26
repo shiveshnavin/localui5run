@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"localui5run/localui5run/test/unit/AllTests"
+		"sn/covid19fnt/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

@@ -1,0 +1,16 @@
+{
+  "name": "covid19fnt",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "devDependencies": {
+    "@ui5/cli": "1.7.0",
+    "ui5-middleware-cfdestination": "^0.1.6"
+  },
+  "scripts": {
+    "build": "ui5 build --include-task=generateManifestBundle generateCachebusterInfo"
+  },
+  "ui5": {
+    "dependencies": []
+  }
+}

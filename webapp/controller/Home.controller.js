@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("localui5run.localui5run.controller.Home", {
+	return Controller.extend("sn.covid19fnt.controller.Home", {
 		onInit: function () {
 
 		}
