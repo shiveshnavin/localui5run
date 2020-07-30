@@ -4,7 +4,7 @@
 
 #### If you use VSCode , You can install SAPUI5 Extension (iljapostnovs.ui5plugin) to use code completion and other features of UI5 in IDE
 
-Note : You might want to add these files to .gitignore as these files are modified for running locally : 
+Note : These files are modified for running locally so make sure you manually handle any changes and git : 
 ```
 ui5.yaml , package.json , install.js , .localui5 , ui5.yaml.bak , package.json.bak , run.bat , run.sh
 ```
